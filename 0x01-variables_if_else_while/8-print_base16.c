@@ -6,14 +6,15 @@
 int main(void)
 {
 int x;
-for (x = '0'; x <= 'f'; x++)
+int y;
+for (x = '0'; x <= '9'; x++)
 {
-if (x != ':' && x != ';' && x != '<' && x != '=' && x != '>' && x != '?' && x != '@')
-{
-x = tolower(x);
 putchar(x);
-putchar("\n");
 }
+for (y = 'a'; y <= 'f'; y++)
+{
+putchar(y);
 }
+putchar('\n');
 return (0);
 }

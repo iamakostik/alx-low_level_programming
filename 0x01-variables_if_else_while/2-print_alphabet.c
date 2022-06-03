@@ -6,11 +6,10 @@
 int main(void)
 {
 int n;
-for (n = 'A'; n <= 'z'; n++)
+for (n = 'a'; n <= 'z'; n++)
 {
-n = tolower(n);
 putchar(n);
-putchar("\n");
 }
+putchar('\n');
 return (0);
 }
