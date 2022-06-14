@@ -2,7 +2,7 @@
 /**
 * rev_string - check the code
 *
-*@s : the pointer variable
+*@s : the variable
 */
 void rev_string(char *s)
 {
@@ -17,8 +17,8 @@ while (x > y)
 {
 o = s[y];
 n = s[x];
-s[y] = o;
-s[x] = n;
+s[y] = n;
+s[x] = o;
 x--;
 y++;
 }
