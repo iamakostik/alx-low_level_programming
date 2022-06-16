@@ -4,27 +4,16 @@
 * @dest: desc pointer variable
 * @src: src pointer variable
 * @n: n integer variable
-* Return: desc
+* Return: dest
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-int x = 0, y;
-while (n > y)
-{
-if (src[y] == '\0')
-{
-for (y = 0; y < n; y++)
-{
-dest[x] = '\0';
-x++;
-}
-}
-else
-{
-dest[x] = src[y];
-y++;
-x++;
-}
-}
+int i = 0, check = 0;
+while (src[i++])
+	check++;
+for (i = 0; src[i] && i < n; i++)
+	dest[i] = src[i];
+for (i = check; i < n; i++)
+	dest[i] = '\0';
 return (dest);
 }
